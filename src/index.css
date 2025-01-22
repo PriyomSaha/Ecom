@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-burgundy-50: 247, 242, 242;
+    --color-burgundy-100: 238, 224, 224;
+    --color-burgundy-200: 226, 196, 196;
+    --color-burgundy-300: 208, 157, 157;
+    --color-burgundy-400: 185, 107, 107;
+    --color-burgundy-500: 157, 66, 66;
+    --color-burgundy-600: 126, 53, 53;
+    --color-burgundy-700: 105, 44, 44;
+    --color-burgundy-800: 84, 35, 35;
+    --color-burgundy-900: 69, 29, 29;
+    --color-burgundy-950: 35, 15, 15;
+  }
+}
+
+body {
+  @apply antialiased text-gray-900;
+}
+
+.bg-burgundy-900 {
+  background-color: rgb(var(--color-burgundy-900));
+}
+
+.text-burgundy-200 {
+  color: rgb(var(--color-burgundy-200));
+}
+
+.bg-burgundy-600 {
+  background-color: rgb(var(--color-burgundy-600));
+}
+
+.hover_bg-burgundy-700:hover {
+  background-color: rgb(var(--color-burgundy-700));
+}
+
+.text-burgundy-600 {
+  color: rgb(var(--color-burgundy-600));
+}
+
+.bg-burgundy-100 {
+  background-color: rgb(var(--color-burgundy-100));
+}
